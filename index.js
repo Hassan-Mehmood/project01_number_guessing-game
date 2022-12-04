@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 function greetings() {
     console.log("Welcome to the number guessing app");
@@ -25,8 +26,6 @@ async function main() {
     }
     console.log("Computer Score", computerScore);
     console.log("User Score", userScore);
-    console.log("computerNumber", computerNumber);
-    console.log("UserNumber", userNumber);
     const guessAgain = await inquirer.prompt({
         message: "Do you want to guess again",
         type: "list",
